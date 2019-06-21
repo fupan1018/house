@@ -1,0 +1,5 @@
+/* pages/my/about-us/about-us.wxss */
+.img_box{
+  width:100%;
+  height:3745rpx;
+}

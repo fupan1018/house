@@ -1,0 +1,48 @@
+/* pages/my/bind-cellphone/bind-cellphone.wxss */
+page{
+  background:#eeeeee;
+}
+.containers{
+  border-top:2rpx solid #dbdbdb;
+}
+.img_box{
+  width:542rpx;
+  height:541rpx;  
+  margin: 0 auto;
+  margin-top:100rpx;
+  display:block;
+}
+.phone_box01{
+  height:40rpx;
+  line-height:40rpx;
+  font-size:24rpx;
+  color:#333333;
+  width:328rpx;
+  margin:68rpx auto 40rpx auto;
+}
+.phone_box02{
+  width:456rpx;
+  height:68rpx; 
+  margin: 0 auto; 
+}
+.phone_input{
+  width:456rpx;
+  height:68rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#999999;
+  background: #dce0e5;
+  border-radius: 10rpx;
+}
+.bind-btn{
+  width:266rpx;
+  height:62rpx;
+  line-height:62rpx;
+  background: #38adff;
+  font-size:32rpx;
+  color: #fff;
+  border-radius: 30rpx;
+  margin:86rpx auto 20rpx auto;
+  text-align: center;
+  box-shadow: 0 10rpx 0 #edeef0;
+}

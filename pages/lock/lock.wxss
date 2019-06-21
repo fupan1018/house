@@ -1,0 +1,67 @@
+/* pages/lock/lock.wxss */
+.container{
+  padding: 0;
+  flex-direction:inherit;
+  height:100%;
+}
+.lock-box{
+  width:695rpx;
+  height:445rpx;
+  margin-left:42rpx;
+  border-radius: 10rpx;
+  position: relative;
+}
+image{
+  width:695rpx;
+  height:445rpx;
+}
+.lock-left{
+  position: fixed;
+  left:36rpx;
+  top:40rpx;
+  width:422rpx;
+  height:324rpx;
+  border-radius: 10rpx;
+}
+.lock-right{  
+  width:630rpx;
+  height:410rpx;
+  border-radius: 10rpx;
+  position: absolute;
+  top:0;
+  right:20rpx;
+}
+.lock-top{
+  float:right;
+  font-size:74rpx;
+  color: #fff;
+  margin-right:40rpx;
+}
+.lock-bottom{
+  position: absolute;
+  bottom:40rpx;
+  right:28rpx;
+  color: #fff;
+  font-size:22rpx;
+}
+.lock-boxs{
+  position: relative;
+}
+.lock-text1{
+  position: absolute;
+  right:14rpx;
+  bottom:52rpx;
+  /* margin-bottom: 30rpx; */
+}
+.lock-text2{
+  padding-left: 30rpx;
+}
+.lock-line{
+  position: absolute;
+  bottom:40rpx;
+  right:14rpx;
+  height:7rpx;
+  width:88rpx;
+  border-radius: 10rpx;
+  background: #ffb73f;
+}

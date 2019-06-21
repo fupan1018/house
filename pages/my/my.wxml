@@ -1,0 +1,43 @@
+<!--my.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class='image-bg' src='../../images/my_bg.png'></image>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{!userInfo.avatarUrl?'../../images/member_icon.png':userInfo.avatarUrl}}" mode="cover"></image>
+      <view class='user-box'>
+        <image class='user-text' src='../../images/my_smail.png'>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <!-- <text class="userinfo-version">版本号</text> -->
+        </image>
+      </view>
+
+      <!-- <view class='user-text'>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-version">版本号</text>
+      </view>       -->
+    </block>
+  </view>
+  <view class="usermotto">
+    <!-- <view class='user-set' bindtap='showInstallation'>
+      <image class='icons' src='../../images/my_icon01.png'></image>
+      <view class='user-set-item'>安装说明</view>
+      <view class='user-set-arrow'></view>
+    </view> -->
+    <view class='user-sets' bindtap='showInstructions'>
+      <image class='icons' src='../../images/my_icon02.png'></image>
+      <view class='user-set-item'>使用说明</view>
+      <view class='user-set-arrow'></view>
+    </view>
+    <view class='user-set' bindtap='showBindPhone'>
+      <image class='icons_1' src='../../images/my_icon03.png'></image>
+      <view class='user-set-item'>绑定手机</view>
+      <view class='user-set-arrow'></view>
+    </view>
+    <view class='user-set' bindtap='showAboutUs'>
+      <image class='icons' src='../../images/my_icon04.png'></image>
+      <view class='user-set-item'>关于我们</view>
+      <view class='user-set-arrow'></view>
+    </view>
+  </view>
+</view>

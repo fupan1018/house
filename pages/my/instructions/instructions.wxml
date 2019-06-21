@@ -1,0 +1,4 @@
+<!--pages/my/instructions/instructions.wxml-->
+<view class='containers'>
+  <image class='img_box' src='../../../images/instructions.png'></image>
+</view>

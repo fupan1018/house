@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='user-box' bindtap="viewLock">
+    <image src='../../images/index_bg_01.png'></image>
+    <view class='box-right'>
+      <!-- <view class='room'>
+        <text class='room-number'>1205</text><text>室</text>
+      </view> -->
+      <view class='community'>{{areaName}}</view> 
+    </view>
+    <view class='more'>...</view>
+  </view>
+  <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading>
+</view>

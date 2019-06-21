@@ -1,0 +1,24 @@
+<!--pages/lock/lock.wxml-->
+
+<view class='container' >
+  <view class='box'>
+    <view class='lock-list' bindtap="viewDevice">
+      <view class='lock-box'>
+        <!-- <view class='lock-left'>
+          <image class='lock-image'></image>
+        </view> -->
+        <image src='../../images/index_bg_02.png'></image>
+        <view class='lock-right'>
+          <view class='lock-top'>...</view>
+          <view class='lock-bottom'>
+            <view class='lock-boxs'>
+              <view class='lock-text1'>智能门锁</view>
+              <view class='lock-line'></view>
+              <view class='lock-text2'>{{nodeName}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

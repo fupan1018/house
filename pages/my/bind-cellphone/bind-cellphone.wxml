@@ -1,0 +1,17 @@
+<!--pages/my/bind-cellphone/bind-cellphone.wxml-->
+<view class='containers'>
+  <image class='img_box' src='../../../images/bind_phone.png'></image>
+  <view class='phone_box01'>
+    您的手机号：{{phone}}
+  </view>
+  <view class='phone_box02'>
+    <input class='phone_input' type="number" placeholder='请输入手机号' bindinput='getPhone'></input>
+  </view>
+  <view class='bind-btn' bindtap='savePhone'>保存手机</view>
+  <!-- <view class='bind-phone' bindtap='showBinDetails'>
+    <view class='bind-phone-text'>绑定手机号</view>
+    <view class='phone-number'></view>
+    <view class='phone-arrow'></view>
+  </view> -->
+</view>
+

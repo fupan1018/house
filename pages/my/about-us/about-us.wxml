@@ -1,0 +1,4 @@
+<!--pages/my/about-us/about-us.wxml-->
+<view class='containers'>
+  <image class='img_box' src='../../../images/aboutUs.jpg'></image>
+</view>

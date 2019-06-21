@@ -1,0 +1,74 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+.container{
+  padding: 0;
+  flex-direction:inherit;
+}
+.user-box{
+  width:680rpx;
+  height:256rpx;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 16rpx;
+  position: relative;
+}
+.box-left{
+  width:150rpx;
+  height:150rpx;
+  margin-left:50rpx;
+  margin-top:50rpx;
+  float:left;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.box-right{
+  height:150rpx;
+  margin-left:80rpx;
+  margin-top:65rpx;
+  font-size: 32rpx;
+  color:#fff;
+  position: absolute;
+  right:264rpx;
+  top:0;
+}
+.room{
+  line-height: 48rpx;
+  margin-top:10rpx;
+}
+.room-number{ 
+  font-size:52rpx;
+  font-weight: 600;
+  margin-right: 15rpx;
+}
+.community{
+  line-height: 48rpx;
+}
+.more{
+  position: absolute;
+  right:46rpx;
+  top:0;
+  margin-left:165rpx;
+  margin-top:52rpx;
+  font-size:74rpx;
+}

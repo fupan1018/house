@@ -1,0 +1,5 @@
+/* pages/my/instructions/instructions.wxss */
+.img_box{
+  width:100%;
+  height:3198rpx;
+}

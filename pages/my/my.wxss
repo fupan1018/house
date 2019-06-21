@@ -1,0 +1,125 @@
+/**my.wxss**/
+.container{
+  display:block;
+  padding: 0;
+}
+.userinfo {
+  /* border-bottom:1rpx solid #eee;  */
+  height:511rpx;
+  position: relative;
+}
+.image-bg{
+  width:750rpx;
+  height:471rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:144rpx;
+  left:50%;
+  margin-left:-64rpx;
+  z-index: 999;
+}
+.user-box{
+  width:670rpx;
+  height:278rpx;
+  position: absolute;
+  left:50%;
+  margin-left:-335rpx;
+  top:220rpx;
+}
+.user-text{
+  width:100%;
+  height:100%;
+}
+.userinfo-nickname {
+  color: #3e3e3e;
+  display: block;
+  height:38rpx;
+  line-height:38rpx;
+  text-align: center;
+  font-size:32rpx;
+  /* margin-top:102rpx; */
+  position:absolute;
+  top:102rpx;
+  left:50%;
+  margin-left:-65rpx;
+  width:130rpx;
+}
+.userinfo-version{
+  color: #999999;
+  display: block;
+  font-size: 30rpx;
+  height:30rpx;
+  line-height:30rpx;
+  text-align: center;
+  margin-top:15rpx;
+}
+/* .usermotto {
+  margin-top: 24rpx;
+  border-top:1rpx solid #ddd;
+} */
+.user-sets{
+  height:98rpx;
+  line-height: 98rpx;
+  border-top:1rpx solid #f1f1f1; 
+  border-bottom:1rpx solid #f1f1f1;  
+  margin:0 30rpx;
+  display:flex;
+}
+.user-set{
+  height:98rpx;
+  line-height: 98rpx;
+  border-bottom:1rpx solid #f1f1f1;  
+  margin:0 30rpx;
+  display:flex;
+}
+.user-set-item{
+  font-size:28rpx;
+  width:100%;
+  color:#333;
+}
+.icons{
+  width:42rpx;
+  height:42rpx;
+  display: inline-block;
+  margin-top:30rpx;
+  margin-left:10rpx;
+  margin-right:25rpx;
+}
+.icons_1{
+  width:36rpx;
+  height:42rpx;
+  display: inline-block;
+  margin-top:30rpx;
+  margin-left:10rpx;
+  margin-right:25rpx;
+}
+.user-set-arrow {
+  padding-right:26rpx;
+  position:relative;
+}
+.user-set-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #d4ddde;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
+}
+/* .getUserBtn{
+  position: absolute;
+  top:214rpx;
+  left:235rpx;
+  width:272rpx;
+} */
+
