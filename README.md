@@ -11,17 +11,17 @@
 
 三、项目结构
 ----------------
-<img src="https://github.com/fupan1018/movie-app/blob/master/example/a.png"/>
+<img src="https://github.com/fupan1018/house/blob/master/example/a.png"/>
 	
 四、视图展示
 ----------------
-<img src="https://github.com/fupan1018/movie-app/blob/master/example/b.png"/>
+<img src="https://github.com/fupan1018/house/blob/master/example/b.png"/>
 	首页界面
 
-<img src="https://github.com/fupan1018/movie-app/blob/master/example/c.png"/>
+<img src="https://github.com/fupan1018/house/blob/master/example/c.png"/>
 	设备界面
 
-<img src="https://github.com/fupan1018/movie-app/blob/master/example/d.png"/>
+<img src="https://github.com/fupan1018/house/blob/master/example/d.png"/>
 	我的
 
 五、总结
