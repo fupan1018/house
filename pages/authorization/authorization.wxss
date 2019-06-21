@@ -1,0 +1,43 @@
+/* pages/authorization/authorization.wxss */
+page{
+  background-color: #eeeeee;
+}
+.img-box{
+  width:284rpx;
+  height:266rpx;
+  margin: 150rpx auto 0 auto;
+}
+.authorizat-img{
+  width:284rpx;
+  height:266rpx;
+}
+.title-name{
+  height:92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  font-size:30rpx;
+  color:#333333;
+  font-weight: 700;
+}
+.title-cont{
+  height:26rpx;
+  line-height: 26rpx;
+  text-align: center;
+  font-size:22rpx;
+  color:#555555;
+}
+.authorizat-btn{
+  margin-top:130rpx;
+  width:670rpx;
+  height:74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  background: #29b1eb;
+  font-size:32rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:40rpx;
+}

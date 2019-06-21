@@ -1,0 +1,12 @@
+<!--pages/authorization/authorization.wxml-->
+<view class="containers">
+  <view class="authorization">
+    <view class='img-box'>
+      <image class='authorizat-img' src='../../images/authorizat-img.png'></image>
+    </view>
+    <view class='title-name'>门锁宝宝</view>
+    <view class='title-cont'>申请获取你的公开信息(昵称,头像等）</view>
+    <button class='authorizat-btn' open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录 </button>    
+  </view>
+</view>
+
