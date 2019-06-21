@@ -1,0 +1,37 @@
+<!--pages/device/add-fingerprint/add-fingerprint.wxml-->
+<view class='containers' wx:if='{{isShow}}'>
+  <view class='fingerprint-area'>
+    <image class='fingerprint-bg' src='../../../images/addFinger_02.png'>
+      <image class='icon_fingerprint' src='../../../images/fingerprint_5.png'></image>
+    </image>
+    <!-- <view class='prompt'>请选择舒适的握姿与手指按压力度</view> -->
+  </view>
+  <view class='set-box'>
+    <view class='set-user'>
+      <checkbox-group class="group">
+        <view class="label-1">
+          <label>
+            <checkbox bindtap="checkboxChange" data-checked="{{isChecked}}"></checkbox>
+            <text class="label-1-text">设为胁迫用户</text>
+          </label>
+        </view>
+      </checkbox-group>
+    </view>
+    <!-- <image class='addBtn' bindtap='addFingerprint' src='../../../images/add_btn.png'>
+      <text class='btn-word'>开始添加</text>
+    </image> -->
+    <view class='addBtn' bindtap='addFingerprint'>开始添加</view>
+  </view> 
+</view>
+<view class='containers' wx:if='{{isHide}}'>
+  <view class='fingerprint-area'>
+    <image class='fingerprint-bg' src='../../../images/addFinger_03.png'>
+      <image class='icon_fingerprint' src="{{url?url:'../../../images/fingerprint_5.png'}}"></image>
+    </image>
+  </view>
+  <view class='set-box'>
+    <view class='text-content'>{{texts}}</view>
+  </view>
+
+  <view class='next' wx:if='{{show}}' bindtap='next'>下一步</view> 
+</view>

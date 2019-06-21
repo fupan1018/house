@@ -1,0 +1,18 @@
+<!--pages/device/add-fingerprint-detail/add-fingerprint-detail.wxml-->
+<view class='containers'>
+  <form class='add-cord-name'>
+    <view class='tips'>请选择指纹名称</view>
+    <view class='add-text'>
+      <input class='name-input' name='cordname' value='{{fingerprintName}}'></input>
+    </view>
+    <view class='fingerprint-box'>
+      <view  class="fingerprint-desc-item {{item.state==1?'active-tag':''}}" wx:key="index"  wx:for="{{fingerprintNames}}" data-key='{{index}}'>
+      <view>
+        <rich-text class='data_name' data-text="{{item.data_name}}"  bindtap="selection" >{{item.data_name}}</rich-text>
+      </view>    
+    </view>
+    </view>
+    
+    <view class='add-btn' bindtap="addSave">保存</view>
+  </form>
+</view>

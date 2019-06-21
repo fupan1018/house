@@ -1,0 +1,58 @@
+/* pages/device/add-fingerprint-detail/add-fingerprint-detail.wxss */
+page{
+  background-color: #eeeeee;
+}
+.tips{
+  height:78rpx;
+  line-height: 78rpx;
+  color:#949494;
+  font-size:24rpx;
+  padding-left:50rpx;
+  border-top:3rpx solid #dbdbdb;
+}
+.add-text{
+  height:98rpx;
+  line-height: 98rpx;
+  font-size:24rpx;
+  border-bottom: 1rpx solid #ddd;
+  padding-left:50rpx;
+  background: #fff;
+  color:#333333;
+}
+.name-input{
+  display: inline-block;
+  height:98rpx;
+  line-height: 98rpx;
+}
+.fingerprint-box{
+  margin-left:56rpx;
+  height:180rpx;
+}
+.fingerprint-desc-item{
+  height:52rpx;
+  line-height: 52rpx;
+  background:#e0f4f6;
+  font-size: 24rpx;
+  color:#5ca1d2;
+  text-align: center;
+  border:1rpx solid #afceec;
+  border-radius: 30rpx;
+  float:left;
+  margin:36rpx 54rpx 0 0;
+  padding:0 34rpx;
+}
+.add-btn{
+  margin-top:54rpx;
+  width:670rpx;
+  height:74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  background: #29b1eb;
+  font-size:24rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:40rpx;
+}
