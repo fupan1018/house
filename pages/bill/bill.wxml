@@ -1,0 +1,54 @@
+<!--pages/bill/bill.wxml-->
+<view class='containers'>
+  <view class='mask' hidden="{{flag}}"></view>
+  <view class='bill-box'>
+    <view class='tab-bar'>
+      <view class="{{selected1?'blue':'default'}}" bindtap='selected1'>代缴账单</view>
+      <view class="{{selected2?'blue':'default'}}" bindtap='selected2'>已缴账单</view>
+    </view>
+    <view class="{{selected1?'show':'hidden'}}">
+      <view class='bill-list'  wx:key="index" wx:for="{{array1}}" data-item="item">
+        <view class='bill-money'>
+          <view class='bill-money-l'>租金</view>
+          <view class='bill-money-r'>{{item.Amount}}</view>
+        </view>
+        <view class='bill-date'>
+          <view class='bill-date-list'>租约周期：{{item.LeaseStartTime}}至{{item.LeaseEndTime}}</view>
+          <view class='bill-date-list'>应交日期：{{item.PayableDate}}</view>
+        </view>
+        <view class='bill-pay' bindtap="show" data-money='{{item.Amount}}'>待付款</view>
+      </view>
+      <!-- <view class='bill-list'>
+        <view class='bill-money'>
+          <view class='bill-money-l'>租金</view>
+          <view class='bill-money-r'>15000元</view>
+        </view>
+        <view class='bill-date'>
+          <view class='bill-date-list'>租约周期：2018/11/12至2019/2/11</view>
+          <view class='bill-date-list'>应交日期：2018/11/12</view>
+        </view>
+        <view class='bill-pay' bindtap="show">待付款</view>
+      </view> -->
+    </view>
+    <view class="{{selected2?'show':'hidden'}}">
+       <view class='bill-lists'  wx:key="index" wx:for="{{array2}}" data-item="item">
+        <view class='bill-money'>
+          <view class='bill-money-l'>租金</view>
+          <view class='bill-money-r'>已付款</view>
+        </view>
+        <view class='bill-date'>
+          <view class='bill-date-list'>
+            <view class='bill-date-lists'>租约周期：{{item.LeaseStartTime}}至{{item.LeaseEndTime}}</view>
+            <view class='bill-date-list-r'>{{item.Amount}}</view>
+          </view>
+          <view class='bill-date-list'>
+            <view class='bill-date-lists'>应交日期：{{item.PayableDate}}</view>
+            <view class='bill-date-list-r'>实付款</view>
+          </view>          
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='pay-btn' bindtap="hide" hidden="{{flag}}">微信支付</view>
+  <!-- <view bindtap='payMoney'>微信支付</view> -->
+</view>

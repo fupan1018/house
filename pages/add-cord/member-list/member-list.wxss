@@ -1,0 +1,56 @@
+/* pages/device/add-cord/member-list/member-list.wxss */
+.members{
+  padding: 0;
+  flex-direction:column;
+}
+.member-list{
+  height:100%;
+  border-top:2rpx solid #ddd;
+}
+.member-box{
+  height:258rpx;
+  width:690rpx;
+  border-radius: 20rpx;
+  margin-top:40rpx;
+  margin-left:30rpx;
+  flex-direction:column;
+  position: relative;
+}
+.member_bg{
+  width:690rpx;
+  height:258rpx;
+}
+.member-content{
+  flex-direction:row;
+  display:flex;
+  position:absolute;
+  top:0;
+}
+.member-image{
+  width:122rpx;
+  height:122rpx;
+  margin: 20rpx;
+  display: inline-block;
+  margin-top:64rpx;
+  margin-left:46rpx;
+}
+.member-words{
+  width:360rpx;
+  height: 130rpx;
+  font-size:24rpx;
+  display:inline-block;
+  margin-top:74rpx;
+  color: #fff;
+  margin-left:30rpx;
+
+}
+.member-word{
+  height:56rpx;
+  line-height: 56rpx;
+}
+.mores{
+  color:#fff;
+  display: inline-block;
+  font-size:72rpx;
+  margin-top:56rpx;
+}

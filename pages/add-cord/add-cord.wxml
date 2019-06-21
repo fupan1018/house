@@ -1,0 +1,13 @@
+<!--pages/device/add-cord/add-cord.wxml-->
+<view class='containers'>
+  <view class='cord-area'>
+    <image class='card-bg' src='../../../images/addCard_02.png'></image>
+    <!-- <view class='prompt'>请手持门卡，将其靠近门锁，进行录入</view> -->
+  </view>
+  <view class='set-box'>
+    <!-- <image class='addBtn' bindtap='addCord' src='../../../images/add_btn.png'>
+      <text class='btn-word'>开始添加</text>
+    </image> -->
+    <view class='addBtn' bindtap='addCord'>开始添加</view>
+  </view>
+</view>

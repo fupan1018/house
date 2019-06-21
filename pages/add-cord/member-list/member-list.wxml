@@ -1,0 +1,16 @@
+<!--pages/device/add-cord/member-list/member-list.wxml-->
+<view class='members'>
+  <view class='member-list'>
+    <view class='member-box' bindtap='addCordPage' wx:key="index" wx:for="{{array}}" data-item="{{item.ID}}" ids='{{item.ID}}'>
+      <image class='member_bg' src='../../../../images/member_bg.png'></image>
+      <view class='member-content' id='{{item.ID}}'>
+        <image class='member-image' src='../../../../images/member_icon.png'></image>
+        <view class='member-words'>
+          <view class='member-word'>{{item.RealName}}</view>
+          <view class='member-word'>{{item.Phone}}</view>
+        </view>
+        <view class='mores'>...</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/device/add-cord/add-cord-detail/add-cord-detail.wxml-->
+<view class='containers'>
+  <form class='add-cord-name'>
+    <view class='tips'>请输入门卡密码名称</view>
+    <view class='add-text'>
+      <input class='name-input' name='cordname' bindinput='cordNameInput'></input>
+    </view>
+    <view class='add-btn' bindtap="addSave">保存</view>
+  </form>
+</view>
