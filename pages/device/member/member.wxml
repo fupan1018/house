@@ -1,0 +1,23 @@
+<!--pages/device/member/menber.wxml-->
+<view class='members'>
+  <view class='member-list'>
+    <view class='member-box' wx:for='{{array}}' wx:key='{{index}}' data-item='{{item.ID}}' ids='{{item.ID}}'>
+      <image class='member_bg' src='../../../images/member_bg.png' style='{{item.txtStyle}}' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index='{{index}}'>
+        <view class='member-content'>
+          <image class='member-image' src='../../../images/member_icon.png'></image>
+          <view class='member-words'>
+            <view class='member-word'>{{item.RealName}}</view>
+            <view class='member-word'>{{item.Phone}}</view>
+          </view>
+          <view class='mores' bindtap='showMemberDetail' data-item='{{item.ID}}'>...</view>
+        </view>
+      </image>
+      <view class="remove" bindtap="delItem" data-itemID="{{item.ID}}" data-index='{{index}}'>删除 </view>
+      <!-- <view class='navigator-arrow'></view> -->
+    </view>
+  </view>
+  <view class='add-box' bindtap='addMember'>
+    <image class='add-member_bg' src='../../../images/member_bg.png'></image>
+    <view class='add-member'>+</view>
+  </view>
+</view>

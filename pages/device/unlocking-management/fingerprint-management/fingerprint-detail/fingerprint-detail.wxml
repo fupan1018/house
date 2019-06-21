@@ -1,0 +1,13 @@
+<!--pages/device/unlocking-management/fingerprint-management/fingerprint-detail/fingerprint-detail.wxml-->
+<view class='containers'>
+  <view class='add-member'>
+    <view class='tips'>请输入新的指纹名称</view>
+    <view class='add-text'>
+      <text class='user-text'>指纹名称</text>
+      <input class='add-input' bindinput='getPassName'></input>
+    </view>
+    <view class='tip-text'>是否删除用户及指纹密码</view>
+    <view class='save-btn' bindtap='save'>保存</view>
+    <view class='del-btn' bindtap='delFingerprint'>删除</view>
+  </view>
+</view>

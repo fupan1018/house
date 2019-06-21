@@ -1,0 +1,36 @@
+/* pages/unlocking-management/unlocking-management.wxss */
+page{
+  background-color: #eeeeee;
+}
+.containers{
+  border-top:3rpx solid #dbdbdb;
+}
+.content-list{
+  margin-top:8rpx;
+}
+.content-list-item{
+  height:98rpx;
+  background: #fff;
+  margin-top:2rpx;
+}
+.content-l{
+  float:left;
+  margin-left:40rpx;
+  height:36rpx;
+  width:36rpx;
+  margin-top:30rpx;
+}
+.img-box{
+  height:36rpx;
+  width:36rpx;
+  vertical-align:top;
+
+}
+.content-r{
+  float:left;
+  margin-left:22rpx;
+  height:98rpx;
+  line-height: 98rpx;
+  color: #303030;
+  font-size:26rpx;
+}

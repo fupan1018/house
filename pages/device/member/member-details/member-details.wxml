@@ -1,0 +1,83 @@
+<!--pages/device/member/member-details/member-details.wxml-->
+<view class='containers'>
+  <view class='content-box'>
+    <view class='member-content'>
+      <view class='image-box'>
+        <image class='mem-image' src='../../../../images/member_icon.png'></image>
+      </view>
+      <view class='mems-text'>
+        <view class='men-name'>{{name}}</view>
+        <view class='men-number'>
+          <image class='iphone-icon' src='../../../../images/member_detail_phone.png'></image>
+          <text class='number-text'>{{phone}}</text>
+        </view>
+      </view>    
+    </view>
+    <view class='add-ways'>
+      <view class='passwords' bindtap="addPassword">
+        <image class='pass-icon' src='../../../../images/member_detail_icon01.png'></image>
+        <view class='pass-text'>添加密码</view>
+      </view>
+      <view class='passwords' bindtap='addFingerprint'>
+        <image class='pass-icon' src='../../../../images/member_detail_icon02.png'></image>
+        <view class='pass-text'>添加指纹</view>
+      </view>
+      <view class='passwords' bindtap='addCard'>
+        <image class='pass-icon' src='../../../../images/member_detail_icon03.png'></image>
+        <view class='pass-text'>添加卡片</view>
+      </view>
+    </view>
+    <view class='tab-ways'>
+      <view class="{{selected1?'blue':'default'}}" bindtap='selected1'>密码</view>
+      <view class="{{selected2?'blue':'default'}}" bindtap='selected2'>指纹</view>
+      <view class="{{selected3?'blue':'default'}}" bindtap='selected3'>卡片</view>
+    </view>
+
+  </view>
+
+  <view class='password-ways'>
+    <view class="{{selected1?'show':'hidden'}}">
+      <view class='ways-list-item' wx:key="index" wx:for="{{arrayPassword}}">
+        <view class='ways-item-l'>
+          <view class='item-l1'>{{item.Fingerprint}}</view>  
+          <view class='item-l2'>
+            <text>创建时间</text><text>{{item.CreateTime}}</text>
+          </view>
+        </view>
+        <view class='ways-item-r'>已使用{{item.timelag}}天</view>  
+      </view>
+      <!-- <view class='ways-list-item' >
+        <view class='ways-item-l'>
+          <view class='item-l1'>娇娇的密码</view>  
+          <view class='item-l2'>
+            <text>创建时间</text><text>2019/01/26</text>
+          </view>
+        </view>
+        <view class='ways-item-r'>已使用一天</view>  
+      </view> -->
+    </view>
+    <view class="{{selected2?'show':'hidden'}}">
+      <view class='ways-list-item' wx:key="index" wx:for="{{arrayFingerprint}}">
+        <view class='ways-item-l'>
+          <view class='item-l1'>{{item.Fingerprint}}</view>  
+          <view class='item-l2'>
+            <text>创建时间</text><text>{{item.CreateTime}}</text>
+          </view>
+        </view>
+        <view class='ways-item-r'>已使用{{item.timelag}}天</view>  
+      </view>
+    </view>
+    <view  class="{{selected3?'show':'hidden'}}">
+      <view class='ways-list-item' wx:key="index" wx:for="{{arrayCord}}">
+        <view class='ways-item-l'>
+          <view class='item-l1'>{{item.Fingerprint}}</view>  
+          <view class='item-l2'>
+            <text>创建时间</text><text>{{item.CreateTime}}</text>
+          </view>
+        </view>
+        <view class='ways-item-r'>已使用{{item.timelag}}天</view>  
+      </view>
+    </view>
+   </view>
+</view>
+

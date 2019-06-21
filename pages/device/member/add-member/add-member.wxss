@@ -1,0 +1,58 @@
+/* pages/device/add-member/add-member.wxss */
+page{
+  background-color: #eeeeee;
+}
+.tips{
+  height:78rpx;
+  line-height: 78rpx;
+  color:#949494;
+  font-size:24rpx;
+  padding-left:50rpx;
+  border-top:3rpx solid #dbdbdb;
+}
+.add-text{
+  height:98rpx;
+  line-height: 98rpx;
+  font-size:24rpx;
+  border-bottom: 1rpx solid #ddd;
+  padding-left:50rpx;
+  background: #fff;
+  color:#333333;
+}
+.texts{
+  margin-left:20rpx;
+}
+.name-text{
+  display: inline-block;
+  height:98rpx;
+  line-height: 98rpx;
+  position: absolute;
+}
+.add-input{
+  display: inline-block;
+  margin-left:118rpx;
+  height:98rpx;
+  line-height: 98rpx;
+}
+.tip{
+  height:78rpx;
+  line-height: 78rpx;
+  color:#949494;
+  font-size:24rpx;
+  padding-left:50rpx;
+}
+.add-btn{
+  margin-top:172rpx;
+  width:670rpx;
+  height:74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  background: #29b1eb;
+  font-size:32rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:40rpx;
+}

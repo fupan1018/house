@@ -1,0 +1,106 @@
+<!--pages/device/device.wxml-->
+<view class="container">
+  <view class='lock-detail'>
+    <image class='device_bg' src='../../images/device_bg_01.png'></image>
+    <view class='home-name'>
+      <image class='d-image' src='../../images/location_icon.png'></image>
+      <text class='d-text'>{{areaName}}</text>
+    </view>
+    <view class='detail-box'>
+      <view class='lock-item'>
+        <view class='item-text'>设备名称</view>
+      </view>
+      <view class='lock-item'>
+        <view class='item-text item-text-B'>{{nodeName}}</view>
+      </view>
+      <view class='lock-item'>
+        <view class='item-text'>设备OID</view>
+      </view>
+      <view class='lock-item'>
+        <view class='item-text item-text-B'>{{nodeID}}</view>
+      </view>
+      <view class='lock-item lock-authorized'>
+        <view class='item-text'>授权期至</view>
+      </view>
+      <view class='lock-item lock-authorized'>
+        <view class='item-text item-text-B'>{{vaildTime}}</view>
+      </view>
+      <view class='view-btn'  bindtap='{{payType == 1 ? "showRules": "showBillPage"}}'>
+        <image class='relet_btn' src='../../images/xz@2x.png'></image>
+      </view>
+    </view>
+    <view class='lock-parameter'>
+      <view class='parameter-box'>
+        <view class='parameter'>
+          <image class='icons icon1' src='../../images/device_1.png'></image>
+          <view class='lock-word'>NB网络</view>
+        </view>
+        <view class='parameter'>
+          <image class='icons icon2' src='../../images/device_2.png'>
+            <text class='electric' >{{batteryPercent}}</text>
+          </image>          
+          <view class='lock-word'>电量</view>
+        </view>
+        <view class='parameter'>
+          <image class='icons icon3' src='../../images/device_3.png'></image>
+          <view class='lock-word'>布防</view>
+        </view>
+        <view class='parameter parameter04'>
+          <image class='icons icon4' src='../../images/device_4.png'></image>
+          <view class='lock-word'>安全开关</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='lock-function'>
+    <view class='function-box' bindtap="viewMember">
+      <image class='icon-box' src='../../images/device_icon_01.png'></image>
+      <view class='lock-words'>成员</view>
+    </view>
+    <view class='function-box' bindtap='showRule'>
+      <image class='icon-box' src='../../images/device_icon_02.png'></image>
+      <view class='lock-words'>新增</view>
+    </view>
+    <view class='function-box' bindtap='showBill'>
+      <image class='icon-box' src='../../images/device_icon_03.png'></image>
+      <view class='lock-words'>账单</view>
+    </view>
+    <view class='function-box' bindtap='showMessage'>
+      <image class='icon-box' src='../../images/device_icon_04.png'></image>
+      <view class='lock-words'>消息</view>
+    </view>
+    <view class='function-box' bindtap='showLocking'>
+      <image class='icon-box' src='../../images/device_icon_05.png'></image>
+      <view class='lock-words'>开锁管理</view>
+    </view>
+    <view class='function-box' bindtap='showRepair'>
+      <image class='icon-box' src='../../images/device_icon_06.png'></image>
+      <view class='lock-words'>报修</view>
+    </view>
+  </view>
+</view>
+
+<!--  新增提示  -->
+<view class="ruleZhezhao {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+  <view class='ruleZhezhaoContent'>
+    <view class='ruleZhezhaoText'>
+      <view class='rule-text' bindtap='addFingerprint'>添加指纹</view>
+      <view class='rule-text' bindtap='addPassword'>添加密码</view>
+      <view class='rule-text' bindtap='addCord'>添加卡片</view>
+      <view class='rule-text' bindtap='addTemporary'>添加时效密码</view>
+      <view class='rule-text' bindtap='hideRule'>取消</view>
+    </view>
+  </view>
+</view>
+<!--  end  -->
+
+<!--  续租提示  -->
+<view class="ruleZhezhao {{isRuleTrues?'isRuleShows':'isRuleHides'}}">
+  <view class='ruleZhezhaoContents'>
+    <view class='ruleZhezhaoTexts'>
+      <view class='rule-text'>请联系房东办理续租事宜</view>
+    </view>
+  </view>
+</view>
+<!--  end  -->

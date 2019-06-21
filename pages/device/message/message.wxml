@@ -1,0 +1,38 @@
+<!--pages/message/message.wxml-->
+<view class='containers'>
+  <view class='message-list'>
+    <view class='message-list-item' wx:key="index" wx:for="{{array}}" data-item="item">
+      <view class='message-l' data-type="{{item.MessageType}}">
+        <image class='img-box' src="../../../images/message_icon_0{{item.MessageType}}.png"></image>
+      </view>
+      <view class='message-r'>
+        <view class='message-date'>{{(item.CreateTime)}}</view>
+        <view class='message-text'>{{item.Title}} {{item.Message}}</view>
+      </view>
+    </view>
+    <!-- <view class='message-list-item'>
+      <view class='message-l'>
+        <image class='img-box' src='../../../images/message_icon_02.png'></image>
+      </view>
+      <view class='message-r'>
+        <view class='message-date'>2019-01-08 12:34:24</view>
+        <view class='message-text'>
+          <text class='text1'>爸爸</text>
+          <text class='text1'>指纹开锁</text>
+        </view>
+      </view>
+    </view>
+    <view class='message-list-item'>
+      <view class='message-l'>
+        <image class='img-box' src='../../../images/message_icon_03.png'></image>
+      </view>
+      <view class='message-r'>
+        <view class='message-date'>2019-01-08 12:34:24</view>
+        <view class='message-text'>
+          <text class='text2'>低电量</text>
+          <text class='text1'>通知</text>
+        </view>
+      </view>
+    </view> -->
+  </view>
+</view>

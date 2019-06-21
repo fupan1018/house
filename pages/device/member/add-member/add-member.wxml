@@ -1,0 +1,16 @@
+<!--pages/device/add-member/add-member.wxml-->
+<view class='containers'>
+  <view class='add-member'>
+    <view class='tips'>请输入用户名</view>
+    <view class='add-text'>
+      <text class='name-text'>昵称</text>
+      <input class='add-input' bindinput ="userNameInput"></input>
+    </view>
+    <view class='tip'>请输入手机号</view>
+    <view class='add-text'>
+      <text class='name-text'>手机号码</text>
+      <input class='add-input' bindinput="phoneInput" ></input>
+    </view>
+    <view class='add-btn' bindtap="showmembers">确认添加</view>
+  </view>
+</view>

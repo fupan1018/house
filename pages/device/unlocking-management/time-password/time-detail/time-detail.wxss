@@ -1,0 +1,46 @@
+/* pages/device/unlocking-management/time-password/time-detail/time-detail.wxss */
+page{
+  background-color: #eeeeee;
+}
+.containers{
+  border-top:3rpx solid #dbdbdb;
+}
+.pass-list{
+  margin-top:6rpx;
+}
+.pass-list-item{
+  height:294rpx;
+  background: #fff;
+  margin-top:2rpx;
+}
+.pass-name{
+  height:78rpx;
+  line-height: 78rpx;
+  margin-top:8rpx;
+  font-size: 28rpx;
+  color: #656565;
+  margin-left:30rpx;
+}
+.pass-time{
+  height:48rpx;
+  line-height: 48rpx;
+  font-size:24rpx;
+  color: #989898;
+  margin-left:30rpx;
+}
+.pass-share{
+  height:52rpx;
+  margin-top:30rpx;
+}
+.share{
+  width:166rpx;
+  height:52rpx;
+  line-height: 52rpx;
+  text-align: center;
+  font-size:24rpx;
+  color: #fff;
+  background: #38acff;
+  float:left;
+  margin-left:128rpx;
+  border-radius: 30rpx;
+}

@@ -1,0 +1,14 @@
+<!--pages/device/unlocking-management/time-password/time-detail/time-detail.wxml-->
+<view class='containers'>
+  <view class='pass-list'>
+    <view class='pass-list-item'>
+      <view class='pass-name'>{{name}}</view>
+      <view class='pass-time'>时效密码：{{password}}</view>
+      <view class='pass-time'>有效期至：{{time}}</view>
+      <view class='pass-share'>
+        <button class='share' open-type="share">分享</button>
+        <!-- <view class='del' bindtap='delTimePasswd' data-passwd='{{item.PasswordContent}}' data-id='{{item.ID}}'>删除</view> -->
+      </view>
+    </view>
+  </view>
+</view>

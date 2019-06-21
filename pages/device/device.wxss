@@ -1,0 +1,278 @@
+/* pages/device/device.wxss */
+.container{
+  padding: 0;
+  flex-direction:column;
+}
+.lock-detail{
+  width:670rpx;
+  height:572rpx;
+  position: relative;
+  border-radius: 15rpx;
+  /* display:flex; */
+}
+.device_bg{
+  width:670rpx;
+  height:574rpx;
+}
+.home-name{
+  height:70rpx;
+  line-height: 70rpx;
+  position: absolute;
+  top:10rpx;
+  left:10rpx;
+}
+.d-image{
+  width:20rpx;
+  height:24rpx;
+  float: left;
+  margin:28rpx 10rpx 10rpx 28rpx;
+}
+.d-text{
+  color: #fff;
+  font-size:22rpx;
+}
+.detail-box{
+  height:380rpx;
+  position: absolute;
+  top:70rpx;
+  right:10rpx;
+}
+.img-box{
+  height:380rpx;
+  width:400rpx;
+  float:left;
+}
+.lock-image{
+  height:80rpx;
+  width:80rpx;
+  background: green;
+  margin-top:50rpx;
+  margin-left:20rpx;
+}
+/* .detail-right{
+  float:right;
+  height:400rpx;
+  width:255rpx;
+} */
+.lock-item{
+  height:40rpx;
+  line-height: 40rpx;
+  color: #fff;
+}
+.item-text{
+  margin-right:44rpx;
+  width:auto;
+  float:right; 
+  font-size:20rpx;  
+}
+.item-text-B{
+  font-weight: 700;
+  font-size:24rpx;
+  line-height: 48rpx;
+}
+.view-btn{
+  width:154rpx;
+  height:60rpx;
+  text-align: center;
+  float:right;
+  margin-top:80rpx;
+  margin-right:20rpx;
+  border-radius: 20rpx;
+}
+.relet_btn{
+  width:180rpx;
+  height:78rpx;
+  position: absolute;
+  top:300rpx;
+  right:32rpx;
+}
+.relet_txt{
+  position: absolute;
+  top:315rpx;
+  right:100rpx;
+  font-size:24rpx;
+  color: #fff;
+}
+.lock-parameter{
+  width:100%;
+  height:88rpx;
+  flex-direction:row;
+  display:flex;
+  position: absolute;
+  bottom:6rpx;
+}
+.parameter-box{
+  width:87%;
+  margin:0 auto;
+}
+.parameter{
+  /* margin:20rpx 15rpx 20rpx 30rpx;  */
+  margin: 20rpx 40rpx 20rpx 0;
+  position: relative;
+  display: inline-block;
+}
+.parameter04{
+  margin: 20rpx 0rpx;
+}
+.icons{
+  width:40rpx;
+  height:40rpx;
+  margin-left:4rpx;
+  vertical-align:middle;
+  display: inline-block;
+}
+.icon1{
+  width:29rpx;
+  height:20rpx;
+}
+.icon2{
+  position: relative;
+  width:46rpx;
+  height:23rpx;
+}
+.icon3{
+  width:29rpx;
+  height:29rpx;
+}
+.icon4{
+  width:26rpx;
+  height:31rpx;
+}
+.electric{
+  font-size:18rpx;
+  color: #fff;
+  position: absolute;
+  top:0;
+  left:0;
+  height:23rpx;
+  line-height:23rpx;
+  display:inline-block;
+  width:38rpx;
+  text-align: center;
+  /* background-image: url('http://localhost:E:/others/eyesProduct/images/device_2.png');
+  background-size:100% 100%; */
+}
+.lock-word{
+  font-size:24rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  color:#fff;
+  text-align: center;
+  display: inline-block;
+  margin-left:10rpx;
+}
+/* .lock-function{
+  flex-direction:row;
+  float:left;
+} */
+.function-box{
+  height:80rpx;
+  width:140rpx;
+  margin: 90rpx 60rpx 0 50rpx;
+  float:left;
+  text-align: center;
+}
+.lock-words{
+  font-size:24rpx;
+  height:66rpx;
+  line-height: 66rpx;
+  text-align: center;
+}
+.icon-box{
+  width:51rpx;
+  height:51rpx;
+  margin-left:4rpx;
+  vertical-align:middle;
+  display: inline-block;
+}
+/* 新增提示层  */
+.isRuleShow{
+    display: block;
+}
+.isRuleHide{
+    display: none;
+}
+.isRuleShows{
+    display: block;
+}
+.isRuleHides{
+    display: none;
+}
+.ruleZhezhao{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.ruleZhezhaoContent{
+    padding: 20rpx 0;
+    width: 99%;
+    margin: 80% auto;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color:#fff;
+}
+.ruleZhezhaoText{
+    width: 300rpx;
+    font-size: 30rpx;
+    color: #2f9bfe;
+    /* display: flex;
+    flex-direction: row; */
+    align-items: center;
+    margin: 25rpx auto;
+}
+.ruleZhezhaoContents{
+    padding: 20rpx 0;
+    width: 80%;
+    margin: 80% auto;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color:#fff;
+}
+.ruleZhezhaoTexts{
+    width: 340rpx;
+    font-size: 30rpx;
+    color: #2f9bfe;
+    /* display: flex;
+    flex-direction: row; */
+    align-items: center;
+    margin: 25rpx auto;
+}
+.rule-text{
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.ruleHide{
+    height: 60rpx!important;
+    width: 60rpx!important;
+    position: absolute;
+    top: -20rpx;
+    right: -20rpx;
+}
+.rule{
+    display: block;
+    border: 1px solid #fff;
+    width: 100rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #fff;
+    height: 60rpx;
+    font-size: 30rpx;
+    border-radius: 30rpx;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+/*  end  */
+

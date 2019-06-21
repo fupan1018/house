@@ -1,0 +1,75 @@
+/* pages/device/unlocking-management/card-management/card-detail/card-detail.wxss */
+page{
+  background-color: #eeeeee;
+}
+.tips{
+  height:78rpx;
+  line-height: 78rpx;
+  color:#949494;
+  font-size:24rpx;
+  padding-left:50rpx;
+  border-top:3rpx solid #dbdbdb;
+}
+.add-text{
+  height:98rpx;
+  line-height: 98rpx;
+  font-size:24rpx;
+  border-bottom: 1rpx solid #ddd;
+  padding-left:50rpx;
+  background: #fff;
+  color:#333333;
+}
+.texts{
+  margin-left:20rpx;
+}
+.user-text{
+  display: inline-block;
+  height:98rpx;
+  line-height: 98rpx;
+  position: absolute;
+}
+.add-input{
+  display: inline-block;
+  margin-left:118rpx;
+  height:98rpx;
+  line-height: 98rpx;
+}
+.tip{
+  height:78rpx;
+  line-height: 78rpx;
+  color:#949494;
+  font-size:24rpx;
+  padding-left:50rpx;
+}
+.tip-text{
+  height:28rpx;
+  line-height: 28rpx;
+  margin-top:240rpx;
+  font-size:24rpx;
+  color:#989898;
+  text-align: center;
+}
+.save-btn{
+  margin-top:172rpx;
+  width:670rpx;
+  height:74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  background: #29b1eb;
+  font-size:26rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  margin: 46rpx auto 0 auto;
+}
+.del-btn{
+  margin-top:172rpx;
+  width:670rpx;
+  height:74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  background: #a1a1a1;
+  font-size:26rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  margin: 28rpx auto 0 auto;
+}

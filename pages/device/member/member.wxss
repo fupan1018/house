@@ -1,0 +1,134 @@
+/* pages/device/member/menber.wxss */
+.members{
+  padding: 0;
+  flex-direction:column;
+}
+.member-list{
+  height:100%;
+  border-top:2rpx solid #ddd;
+}
+.member-box{
+  /* flex-direction:row;
+  display:flex; */
+  height:258rpx;
+  width:690rpx;
+  /* background: #269cd9; */
+  border-radius: 20rpx;
+  margin-top:40rpx;
+  margin-left:30rpx;
+  flex-direction:column;
+  position: relative;
+}
+.member_bg{
+  width:690rpx;
+  height:258rpx;
+  position:absolute;
+  z-index:9;
+}
+.add-member_bg{
+  width:690rpx;
+  height:258rpx;
+}
+.member-content{
+  flex-direction:row;
+  display:flex;
+  position:absolute;
+  top:0;
+}
+.member-image{
+  width:122rpx;
+  height:122rpx;
+  margin: 20rpx;
+  display: inline-block;
+  margin-top:64rpx;
+  margin-left:46rpx;
+}
+/* .member-image-f{
+   width:120rpx;
+  height:120rpx;
+  margin: 20rpx;
+  background: pink;
+  float:left;
+  border-radius: 50%;
+} */
+.member-words{
+  width:360rpx;
+  height: 130rpx;
+  font-size:24rpx;
+  display:inline-block;
+  margin-top:74rpx;
+  color: #fff;
+  margin-left:30rpx;
+
+}
+.member-word{
+  height:56rpx;
+  line-height: 56rpx;
+}
+.mores{
+  color:#fff;
+  display: inline-block;
+  font-size:72rpx;
+  margin-top:56rpx;
+}
+.add-box{
+  height:258rpx;
+  width:690rpx;
+  border-radius: 20rpx;
+  margin-top:40rpx;
+  margin-left:30rpx;
+  position: relative;
+}
+.add-member{
+  color:#fff;
+  font-size:92rpx;
+  text-align: center;
+  height:100rpx;
+  width:100rpx;
+  border:2rpx solid #fff;
+  border-radius: 50%;
+  line-height:92rpx;
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left:-50rpx;
+  margin-top:-50rpx;
+}
+
+.inner{
+    position: absolute;
+    top:0;
+}
+.inner.txt{
+    background-color: #fff;
+    width: 100%;
+    z-index: 5;
+    padding:0 10rpx;
+    transition: left 0.2s ease-in-out;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.inner.del{
+    background-color: #e64340;
+    width: 180rpx;text-align: center;
+    z-index: 4;
+    right: 0;
+    color: #999;
+}
+.remove{  
+  width: 192rpx;  
+  height:258rpx;
+  background-color:#e8eaef;
+  color: #666;
+  position:absolute;
+  top:0;
+  right:3rpx; 
+  display: flex;  
+  justify-content: center;  
+  align-items: center; 
+  border-radius: 10rpx;
+  font-size:28rpx;
+} 
+

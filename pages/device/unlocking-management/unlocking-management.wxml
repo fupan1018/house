@@ -1,0 +1,29 @@
+<!--pages/unlocking-management/unlocking-management.wxml-->
+<view class='containers'>
+  <view class='content-list'>
+    <view class='content-list-item' bindtap='showFingerprint'>
+      <view class='content-l'>
+       <image class='img-box' src='../../../images/lock_icon_01.png'></image>
+      </view>
+      <view class='content-r'>指纹管理</view>
+    </view>
+    <view class='content-list-item' bindtap='showCord'>
+      <view class='content-l'>
+       <image class='img-box' src='../../../images/lock_icon_02.png'></image>
+      </view>
+      <view class='content-r'>卡片管理</view>
+    </view>
+    <view class='content-list-item' bindtap='showPassword'>
+      <view class='content-l'>
+       <image class='img-box' src='../../../images/lock_icon_03.png'></image>
+      </view>
+      <view class='content-r'>密码管理</view>
+    </view>
+    <view class='content-list-item' bindtap='showTimePass'>
+      <view class='content-l'>
+       <image class='img-box' src='../../../images/lock_icon_04.png'></image>
+      </view>
+      <view class='content-r'>时效密码管理</view>
+    </view>
+  </view>
+</view>

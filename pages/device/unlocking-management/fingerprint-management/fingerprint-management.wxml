@@ -1,0 +1,30 @@
+<!--pages/device/unlocking-management/card-management/card-management.wxml-->
+<view class='members'>
+  <view class='member-list'>
+    <view class='member-box' bindtap='showFingerprintDetail' wx:key="index" wx:for="{{array}}" data-item="{{item.ID}}" data-valueId="{{item.ValueID}}">
+      <image class='member_bg' src='../../../../../../../../../images/member_bg.png'></image>
+      <view class='member-content'>
+        <image class='member-image' src='../../../../../../../../../images/member_icon.png'></image>
+        <view class='member-words'>
+          <view class='member-word'>{{item.Fingerprint}}</view>
+          <!-- <view class='member-word'>编号：008</view> -->
+          <view class='member-word'>成员：{{item.Name}}</view>
+        </view>
+        <view class='mores'>...</view>
+      </view>
+    </view>
+    <!-- <view class='member-box' bindtap='showFingerprintDetail'>
+      <image class='member_bg' src='../../../../../../../../../images/member_bg.png'></image>
+      <view class='member-content'>
+        <image class='member-image' src='../../../../../../../../../images/member_icon.png'></image>
+        <view class='member-words'>
+          <view class='member-word'>妈妈的指纹</view>
+          <view class='member-word'>编号：009</view>
+          <view class='member-word'>成员：母亲</view>
+        </view>
+        <view class='mores'>...</view>
+      </view>
+    </view> -->
+  </view>
+</view>
+

@@ -1,0 +1,62 @@
+<!--pages/repair/repair.wxml-->
+<view class='containers'>
+  <form name='uploadFile'>
+    <view class='home-message'>
+      <image class='image-box' src='../../../images/device_00.png'></image>
+      <view class='message-content'>
+        <view class='message-content-item' style='margin-top:36rpx;'>
+          <text class='text1'>设备名称：</text>
+          <text class='text2'>{{nodeName}}</text>
+        </view>
+        <view class='message-content-item' style='margin-top:28rpx;'>
+          <text class='text1'>设备OID：</text>
+          <text class='text2'>{{nodeID}}</text>
+        </view>
+        <view class='message-content-item' style='margin-top:28rpx;'>
+          <text class='text1'>所在微域：</text>
+          <text class='text2'>{{areaName}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='questions'>
+      <view class='question-desc'>选择问题描述（可多选）</view>
+      <view class="question-desc-item {{item.state==1?'active-tag':''}}" wx:key="" bindtap="selection" wx:for="{{questions}}" data-key='{{index}}'>
+        <view>
+          <rich-text class='data_name'>{{item.data_name}}</rich-text>
+        </view>
+      </view>
+    </view>
+    <view class='time'>
+      <image class='time-image' src='../../../images/calendar.png'></image>
+      <text class='time-desc'>选择服务时间</text>
+      <view class='view-right'>
+        <picker mode="date" value="{{date}}" start="2018-09-01" end="2050-09-01" bindchange="bindDateChange" style='margin-right:10rpx;'>
+          <text class='time-text'>{{date}}</text>
+        </picker>
+        <picker mode="time" value="{{time1}}" start="09:01" end="21:01" bindchange="bindTimeChange1">
+          <text class='time-text'>{{time1}}</text>
+        </picker>至
+        <picker mode="time" value="{{time2}}" start="09:01" end="21:01" bindchange="bindTimeChange2">
+          <text class='time-text'>{{time2}}</text>
+        </picker>
+      </view>
+
+    </view>
+    <view class='question-box'>
+      <camera flash="off" device-position="{{position}}" binderror="error" style='display:none;'></camera>
+      <image class='images-box' src="{{src}}"></image>
+      <view class='image-desc' bindtap="takePhoto">
+        <text class='image-text'>请您上传清晰的问题照片，以方便维修人员更快的解决问题 </text>
+        <image class='image-icon' src='../../../images/camera.png'></image>
+      </view>
+    </view>
+    <view class='detail-desc'>
+      <input class='detail-input' placeholder='详细描述下您所遇到的问题' bindinput='questionInput'></input>
+    </view>
+    <image class='btn' bindtap='addRepairBtn' src='../../../images/xhdpi.png'>
+      <text class='btn-word'>提交</text>
+    </image>
+    <!-- <view class='btn' bindtap='addRepairBtn'>提交</view> -->
+    <view class='repair-number'>报修热线：400-100-8888</view>
+  </form>
+</view>
