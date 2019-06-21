@@ -1,0 +1,80 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/device/device",
+    "pages/my/my",
+    "pages/device/member/member",
+    "pages/device/bill/bill",
+    "pages/device/repair/repair",
+    "pages/device/message/message",
+    "pages/device/unlocking-management/unlocking-management",
+    "pages/device/add-cord/add-cord",
+    "pages/device/add-fingerprint/add-fingerprint",
+    "pages/device/member/add-member/add-member",
+    "pages/device/add-password/add-password",
+    "pages/device/bill/payment/payment",
+    "pages/device/member/member-details/member-details",
+    "pages/authorization/authorization",
+    "pages/lock/lock",
+    "pages/device/add-temporary-password/add-temporary-password",
+    "pages/device/add-fingerprint/add-fingerprint-detail/add-fingerprint-detail",
+    "pages/my/instructions/instructions",
+    "pages/my/bind-cellphone/bind-cellphone",
+    "pages/my/about-us/about-us",
+    "pages/device/unlocking-management/fingerprint-management/fingerprint-management",
+    "pages/device/unlocking-management/fingerprint-management/fingerprint-detail/fingerprint-detail",
+    "pages/device/unlocking-management/card-management/card-management",
+    "pages/device/unlocking-management/card-management/card-detail/card-detail",
+    "pages/device/unlocking-management/password-management/password-management",
+    "pages/device/unlocking-management/password-management/password-detail/password-detail",
+    "pages/device/unlocking-management/time-password/time-password",
+    "pages/device/add-password/member-list/member-list",
+    "pages/device/add-fingerprint/member-list/member-list",
+    "pages/device/add-cord/member-list/member-list",
+    "pages/device/add-cord/add-cord-detail/add-cord-detail",
+    "pages/device/unlocking-management/time-password/time-detail/time-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b2bcc7",
+    "selectedColor": "#2f9bfe",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "selectedIconPath": "images/index_icon_02.png",
+        "iconPath": "images/index_icon_01.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/set_icon_02.png",
+        "iconPath": "images/set_icon_01.png",
+        "pagePath": "pages/device/device",
+        "text": "设备"
+      },
+      {
+        "selectedIconPath": "images/my_icon_02.png",
+        "iconPath": "images/my_icon_01.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+    
+}
